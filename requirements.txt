@@ -1,0 +1,14 @@
+torch>=2.1.0
+transformers>=4.40.0
+datasets>=2.19.0
+peft>=0.10.0
+bitsandbytes>=0.43.0
+accelerate>=0.29.0
+deepspeed>=0.14.0
+evaluate>=0.4.1
+gradio>=4.26.0
+sentencepiece
+scikit-learn
+tqdm
+numpy
+wandb
