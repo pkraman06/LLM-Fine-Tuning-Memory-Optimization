@@ -37,7 +37,9 @@ logger = logging.getLogger(__name__)
 
 def parse_args():
     p = argparse.ArgumentParser(description="QLoRA fine-tuning on CUAD")
-    p.add_argument("--model_name", default="meta-llama/Llama-2-7b-hf")
+    p.add_argument("--model_name", default="meta-llama/Llama-2-7b-hf",
+                    help="Base model repo. Requires HF access + login (huggingface-cli login "
+                        "or HF_TOKEN env var) since this repo is gated")
     p.add_argument("--train_json", default="cuda.json",
                     help="Path to the CUAD-format training JSON (default: cuda.json)")
     p.add_argument("--val_json", default=None,
